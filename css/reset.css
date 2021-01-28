@@ -1,0 +1,23 @@
+/*reset*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border: 0;
+}
