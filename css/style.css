@@ -24,7 +24,6 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  width: 100%;
   position: relative;
   padding: 125px 0;
 }
@@ -42,7 +41,6 @@
 
 .choose-your-demo-image {
   display: block;
-  width: 100%;
 }
 
 .choose-your-demo-articles {
@@ -54,9 +52,7 @@
 .choose-your-demo-items {
   flex-basis: calc(50% - 15px);
   margin-bottom: 30px;
-  border-left: 1px solid #e0e0e0;
-  border-right: 1px solid #e0e0e0;
-  border-top: 1px solid #e0e0e0;
+  border: 1px solid #e0e0e0;
   border-bottom: 3px solid #e0e0e0;
   border-radius: 5px;
   overflow: hidden;
@@ -73,14 +69,9 @@
   color: #fff;
   z-index: 2;
   background: rgba(0,0, 0, 0.75);
-  width: 100%;
   height: 100%;
   opacity: 0;
   transition:  all 0.3s linear;
-}
-
-.choose-your-demo-overlay-icon {
-  width: auto;
 }
 
 .choose-your-demo-overlay:hover {
@@ -88,16 +79,18 @@
 }
 
 .subtitle-choose-your-demo {
-  display: block;
-  padding: 20px 0;
   background-color: #f5f6f7;
-  text-decoration: none;
+}
+
+.subtitle-choose-your-demo-link {
+  display: inline-block;
+  padding: 20px 0;
   color: #3b3939;
   font-size: 18px;
   transition: all 0.3s linear;
 }
 
-.subtitle-choose-your-demo:hover {
+.subtitle-choose-your-demo-link:hover {
   color: #b31919;
 }
 
@@ -109,7 +102,6 @@
 
 .images-feature-card {
   height: 80px;
-  width: auto;
   margin: 0 auto;
 }
 
@@ -134,7 +126,6 @@
 }
 
 .you-may-also-like-image {
-  margin-bottom: 1px;
   border-radius: 10px 10px 0 0;
 }
 
@@ -169,7 +160,6 @@
 }
 
 .start-creating {
-  background-color: #786de1;
   background: linear-gradient(to bottom right, #786de1, #f44d76);
   position: relative;
 }
@@ -179,7 +169,6 @@
 }
 
 .footer {
-  width: 100%;
   position: relative;
   margin: 0 auto;
   padding: 25px 0;
@@ -235,10 +224,6 @@
 }
 
 @media (max-width: 992px) {
-  .header-content {
-    padding: 0;
-  }
-
   .choose-your-demo-items {
     flex-basis: 100%;
   }
@@ -261,13 +246,11 @@
   }
 
   .feature-card {
-    flex-basis: calc(100% - 20px);
+    flex-basis: 100%;
   }
 
   .you-may-also-like-items {
-    flex-basis: calc(100% - 20px);
-    flex-grow: 0;
-    margin-bottom: 20px;
+    flex-basis: 100%;
   }
 
   .footer-items {
@@ -287,28 +270,6 @@
 @media (max-width: 480px) {
   .header-content {
     max-width: 95%;
-  }
-
-  .feature-card {
-    flex-basis: calc(100% - 20px);
-  }
-
-  .you-may-also-like-items {
-    flex-basis: calc(100% - 20px);
-    flex-grow: 0;
-    margin-bottom: 20px;
-  }
-
-  .footer-items {
-    justify-content: center;
-  }
-
-  .footer-text-style-end {
-    display: none;
-  }
-
-  .footer-button {
-    margin-top: 10px;
   }
 }
 
