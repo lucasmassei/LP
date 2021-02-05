@@ -51,6 +51,10 @@
   overflow: hidden;
 }
 
+.choose-your-demo-link:hover + .subtitle-choose-your-demo .subtitle-choose-your-demo-link {
+  color:red;
+}
+
 .choose-your-demo-link {
   position: relative;
   display: block;
@@ -80,10 +84,6 @@
 
 .subtitle-choose-your-demo-link {
   color: #3b3939;
-}
-
-.subtitle-choose-your-demo-link:hover {
-  color: #b31919;
 }
 
 .powerful-features {
